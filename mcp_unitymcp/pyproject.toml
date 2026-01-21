@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unitymcp-mcp"
+version = "0.1.0"
+description = "MCP Server for Unity"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=0.1.0",
+    "fastmcp",
+    "httpx",
+    "pydantic"
+]
+
+[project.scripts]
+unitymcp-mcp = "unitymcp_mcp.server:main"

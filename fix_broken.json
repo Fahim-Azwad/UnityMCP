@@ -1,0 +1,4 @@
+{
+  "path": "Test/Broken.cs",
+  "content": "using UnityEngine;\nnamespace UnityMCP.Generated {\n  public class Broken : MonoBehaviour {\n    void Start(){ Debug.Log(\"fixed\"); }\n  }\n}\n"
+}

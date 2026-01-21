@@ -1,0 +1,4 @@
+{
+  "path": "Test/Hello.cs",
+  "content": "using UnityEngine;\n\nnamespace UnityMCP.Generated {\n  public class Hello : MonoBehaviour {\n    void Start(){ Debug.Log(\"Hello from Generated\"); }\n  }\n}\n"
+}

@@ -1,0 +1,9 @@
+{
+  "requestId": "test-001",
+  "commands": [
+    { "type": "CreatePrimitive", "id": "player", "primitive": "Capsule", "name": "Player", "position": [0,1,0] },
+    { "type": "CreateEmpty", "id": "spawn", "name": "Spawner", "position": [0,0,0] },
+    { "type": "Rename", "target": "player", "name": "PlayerRoot" },
+    { "type": "AddComponent", "target": "player", "componentType": "Rigidbody" }
+  ]
+}
