@@ -23,18 +23,18 @@ The system consists of two parts communicating over HTTP:
 
 ```mermaid
 flowchart LR
-    A[Claude Desktop] -- Stdio MCP Protocol --> B[Python MCP Server]
-    B -- HTTP Request --> C[Unity Editor]
+    A["Claude Desktop"] -- Stdio MCP Protocol --> B["Python MCP Server"]
+    B -- HTTP Request --> C["Unity Editor"]
     C -- JSON Response --> B
     
     subgraph "Unity Project"
-        C[UnityMCP Server]
-        D[Command Executor]
-        E[Compiler & Play Mode]
+        C
+        D["Command Executor"]
+        E["Compiler & Play Mode"]
     end
 
     subgraph "Local Environment"
-        B[Start Script (run_server.sh)]
+        B
     end
 ```
 
